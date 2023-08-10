@@ -4,7 +4,8 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "forever server.js",
+    "watch": "forever -w server.js"
   },
   "engines": {
     "node": "12"
@@ -12,7 +13,7 @@
   "author": "",
   "license": "",
   "dependencies": {
-    "forever": "^4.0.1",
+    "forever": "^0.14.2",
     "koa": "^2.14.2",
     "koa-body": "^4.2.0",
     "koa-router": "^10.1.1",
